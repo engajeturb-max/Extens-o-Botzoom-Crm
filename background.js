@@ -31,7 +31,7 @@ const w = {
   // Chave de criptografia
   cript_key: "ffce211a-7b07-4d91-ba5d-c40bb4034a83",
   //Url do backend Principal
-  backend: "https://painel.wascript.com.br/",
+  backend: "https://adminsupercrm.softwaresdeautomacao.com/",
   // Url do backend de funções auxiliares
   backend_utils: "https://backend-utils.wascript.com.br/",
   // WebSockets
@@ -175,10 +175,10 @@ function u() {
   });
 }
 function k() {
-  chrome.runtime.setUninstallURL(`https://painel.wascript.com.br/api/urls/uninstalURL?id=${chrome.runtime.id}`);
+  chrome.runtime.setUninstallURL(`https://adminsupercrm.softwaresdeautomacao.com/api/urls/uninstalURL?id=${chrome.runtime.id}`);
 }
 function _(e) {
-  e.reason === "install" && fetch(`https://painel.wascript.com.br/api/urls/install?id=${chrome.runtime.id}`).then((t) => {
+  e.reason === "install" && fetch(`https://adminsupercrm.softwaresdeautomacao.com/api/urls/install?id=${chrome.runtime.id}`).then((t) => {
     if (!t.ok)
       throw new Error("Erro na requisição: " + t.status);
     return t.json();
