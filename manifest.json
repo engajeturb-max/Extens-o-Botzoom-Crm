@@ -1,0 +1,27 @@
+{
+   "action": {
+      "default_icon": "label/icons/icon.png"
+   },
+   "background": {
+      "service_worker": "background.js"
+   },
+   "content_scripts": [ {
+      "css": [ "label/css/botzom.css", "content/assets/css/style.css", "content.css" ],
+      "js": [ "content/index.js" ],
+      "matches": [ "https://web.whatsapp.com/*" ]
+   } ],
+   "description": "Botzom é um CRM para WhatsApp Web. Organize seus chats e otimize seus negócios no WhatsApp Web",
+   "icons": {
+      "128": "label/icons/icon.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0n9XUGCc+O7KiLWixlIL5NDE73o/eOU0j6jPboSMXXFYae9MiT4alGm9tFq/mE7GA7P+0j8F/9gzEo8sf2aAUfzlqn5U2sWCDVC8HPHKif52TePtdqKweHBBPllQ2jt16VHvsl6i2XKFoGmWMriOL0N9ZIvJQdpNcLZ5jPDqew02aa4DA9FVejO2LI+iOb1tOUFFrnzU4eAmSOFMPrSFRdl7bvSkK69AWNQ5CV+cIHy+nuyIgFGPYwM7SlQ4Djy6uKP12Ya3053EShikoMqF2EpdXz05CpCFdP9TpVTeqm9rp3UX1qvUDbkke/TqBbJk7MmRy067H/F0Env/h+DEMwIDAQAB",
+   "manifest_version": 3,
+   "name": "Botzom – Vendas, CRM e Chatbot para WhatsApp",
+   "permissions": [ "unlimitedStorage", "storage", "alarms", "tabs" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "7.4.2.7",
+   "web_accessible_resources": [ {
+      "matches": [ "https://web.whatsapp.com/*" ],
+      "resources": [ "*.js", "*.css", "*.png", "*.mp3", ".ttf", "label/*.json", "label/*.png" ]
+   } ]
+}
